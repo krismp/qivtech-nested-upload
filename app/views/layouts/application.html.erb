@@ -7,8 +7,26 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+    <div class="navbar navbar-static-top navbar-inverse">
+      <div class="navbar-inner">
+       <div class="container">
+        <a class="brand" href="#">Demo</a>
+        <ul class="nav">
+          <li><%= link_to 'Albums', albums_path %></li>
+        </ul>
+      </div>
+      </div>
+    </div>
+<div class="container">
+  <div class="row">
+    <div class="span9"><%= yield %></div>
+    <div class="span3">
+      <h2>About</h2>
+      <p>This is an app to demonstrate to upload image files using most popular gems like CarrierWave, jQuery File Upload with nested form.</p>        
+    </div>
+  </div>
+</div>
 
-<%= yield %>
 
 </body>
 </html>

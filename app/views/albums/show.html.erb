@@ -3,6 +3,9 @@
 <p>
   <strong>Name:</strong>
   <%= @album.name %>
+  <% @album.images.each do |image| %>
+  <%= image_tag image.image_url(:thumb) %>
+  <% end %>
 </p>
 
 <%= link_to 'Edit', edit_album_path(@album) %> |

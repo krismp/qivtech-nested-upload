@@ -43,7 +43,8 @@ group :development, :test do
   gem 'spring'
 end
 
+gem 'jquery-fileupload-rails', '0.4.1'
 gem 'carrierwave'
-
+gem 'mini_magick'
 
 

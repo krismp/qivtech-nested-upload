@@ -2,11 +2,11 @@
 
 <h1>Listing Albums</h1>
 
-<table>
+<table class="table table-bordered">
   <thead>
     <tr>
-      <th>Name</th>
-      <th colspan="3"></th>
+      <th width="70%">Name</th>
+      <th colspan="3"><div align="center">Action</div></th>
     </tr>
   </thead>
 
@@ -24,4 +24,4 @@
 
 <br>
 
-<%= link_to 'New Album', new_album_path %>
+<%= link_to 'New Album', new_album_path, :class => "btn btn-danger" %>
