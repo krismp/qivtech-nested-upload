@@ -47,4 +47,9 @@ gem 'jquery-fileupload-rails', '0.4.1'
 gem 'carrierwave'
 gem 'mini_magick'
 
+group :production do
+  gem 'rails_12factor'
+  gem 'pg'
+end
+
 
