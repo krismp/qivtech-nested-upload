@@ -13,9 +13,10 @@ default: &default
   adapter: mysql2
   encoding: utf8
   pool: 5
-  username: root
-  password:
-  socket: /opt/lampp/var/mysql/mysql.sock
+  username: qivtech
+  password: password
+  host: localhost
+  socket: /Applications/MAMP/tmp/mysql/mysql.sock
 
 development:
   <<: *default

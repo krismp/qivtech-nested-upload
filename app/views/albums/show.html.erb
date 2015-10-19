@@ -3,8 +3,11 @@
 <p>
   <strong>Name:</strong>
   <%= @album.name %>
+</p>
+
+<p>
   <% @album.images.each do |image| %>
-  <%= image_tag image.image_url(:thumb) %>
+  <p><%= image_tag image.image_url(:thumb) %></p>
   <% end %>
 </p>
 
